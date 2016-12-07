@@ -8,7 +8,7 @@ public class CheckoutItems {
 
 	public Float Totalprice() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Float(0.50);
 	}
 
 }
