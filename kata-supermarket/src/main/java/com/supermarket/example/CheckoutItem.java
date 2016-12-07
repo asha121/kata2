@@ -7,7 +7,7 @@ public class CheckoutItem {
 		this.item = item;
 	}
 
-	public Float Totalprice() {
+	public Float totalprice() {
 		Float totalPrice;
 		switch (this.item) {
 		case "A":
