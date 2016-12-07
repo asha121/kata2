@@ -23,4 +23,9 @@ public class SuperMarketTest {
 		assertEquals(new Float(0.20), new CheckoutItem("C").Totalprice());
 
 	}
+	@Test
+	public void test_total_price_for_single_item_D() {
+		assertEquals(new Float(0.15), new CheckoutItem("D").Totalprice());
+
+	}
 }
