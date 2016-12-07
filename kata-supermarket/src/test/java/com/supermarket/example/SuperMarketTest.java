@@ -23,5 +23,4 @@ public class SuperMarketTest {
 		assertEquals(new Float(0.20), new CheckoutItem("C").Totalprice());
 
 	}
-
 }

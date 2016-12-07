@@ -8,13 +8,19 @@ public class CheckoutItem {
 	}
 
 	public Float Totalprice() {
-		if (item.equals("A")) {
-			return new Float(0.50);
+		Float totalPrice;
+		switch (this.item) {
+		case "A":
+			totalPrice = new Float(0.50);
+			break;
+		case "B":
+			totalPrice = new Float(0.30);
+			break;
+		default:
+			totalPrice = new Float(0.20);
+			break;
 		}
-		if (item.equals("B")) {
-			return new Float(0.30);
-		}
-		return new Float(0.20);
+		return totalPrice;
 	}
 
 }
