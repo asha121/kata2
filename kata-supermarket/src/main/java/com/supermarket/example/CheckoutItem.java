@@ -1,13 +1,27 @@
 package com.supermarket.example;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class CheckoutItem {
+	private List<String> items = new ArrayList<String>(); 
 	private String item;
 
 	public CheckoutItem(String item) {
-		this.item = item;
+		items.add(item);
+		this.item=item;
 	}
 
 	public Float totalprice() {
+		Float totalPrice= new Float(0);
+		for (String string : items) {
+			totalPrice=totalPrice+unitPrice();
+		} 
+		return totalPrice;
+	}
+
+	private Float unitPrice() {
 		Float totalPrice;
 		switch (this.item) {
 		case "A":
@@ -27,7 +41,7 @@ public class CheckoutItem {
 	}
 
 	public void addItem(String string) {
-		
+		items.add(item);
 		
 	}
 
