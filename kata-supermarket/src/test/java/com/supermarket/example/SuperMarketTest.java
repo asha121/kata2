@@ -30,4 +30,12 @@ public class SuperMarketTest {
 		assertEquals(new Float(0.15), new CheckoutItem("D").totalprice());
 
 	}
+	
+	@Test
+	public void test_total_price_for_two_item_A() {
+		CheckoutItem co = new CheckoutItem("A");
+		co.addItem("A");
+		assertEquals(new Float(1.00), co.totalprice());
+
+	}
 }

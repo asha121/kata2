@@ -26,4 +26,9 @@ public class CheckoutItem {
 		return totalPrice;
 	}
 
+	public void addItem(String string) {
+		
+		
+	}
+
 }
