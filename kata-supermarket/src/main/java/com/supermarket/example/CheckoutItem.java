@@ -1,8 +1,8 @@
 package com.supermarket.example;
 
-public class CheckoutItems {
+public class CheckoutItem {
 
-	public CheckoutItems() {
+	public CheckoutItem(String items) {
 		// TODO Auto-generated constructor stub
 	}
 
