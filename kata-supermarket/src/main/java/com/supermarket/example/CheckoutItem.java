@@ -4,25 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CheckoutItem {
-	private List<String> items = new ArrayList<String>(); 
-	private String item;
+	private List<String> items = new ArrayList<String>();
+	private String product;
 
 	public CheckoutItem(String item) {
 		items.add(item);
-		this.item=item;
+		this.product = item;
 	}
 
 	public Float totalprice() {
-		Float totalPrice= new Float(0);
+		Float totalPrice = new Float(0);
 		for (String item : items) {
-			totalPrice=totalPrice+unitPrice();
-		} 
+			this.product = item;
+			totalPrice = totalPrice + unitPrice();
+		}
 		return totalPrice;
 	}
 
 	private Float unitPrice() {
 		Float totalPrice;
-		switch (this.item) {
+		switch (this.product) {
 		case "A":
 			totalPrice = new Float(0.50);
 			break;
@@ -41,7 +42,6 @@ public class CheckoutItem {
 
 	public void addItem(String item) {
 		items.add(item);
-		
 	}
 
 }
