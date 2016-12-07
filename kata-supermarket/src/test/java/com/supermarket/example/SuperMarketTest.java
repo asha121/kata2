@@ -73,5 +73,12 @@ public class SuperMarketTest {
 		assertEquals(new Float(0.45), co.totalprice());
 
 	}
-	
+	@Test
+	public void test_total_price_for_three_A_items() {
+		CheckoutItem co = new CheckoutItem("A");
+		co.addItem("A",2);
+		//System.out.println(co.totalprice());
+		assertEquals(new Float(1.30), co.totalprice());
+
+	}
 }
