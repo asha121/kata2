@@ -1,7 +1,6 @@
 package com.supermarket.example;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class CheckoutItem {
@@ -15,7 +14,7 @@ public class CheckoutItem {
 
 	public Float totalprice() {
 		Float totalPrice= new Float(0);
-		for (String string : items) {
+		for (String item : items) {
 			totalPrice=totalPrice+unitPrice();
 		} 
 		return totalPrice;
@@ -40,7 +39,7 @@ public class CheckoutItem {
 		return totalPrice;
 	}
 
-	public void addItem(String string) {
+	public void addItem(String item) {
 		items.add(item);
 		
 	}
