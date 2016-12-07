@@ -27,10 +27,10 @@ public class CheckoutItem {
 		int qty = item.getQuanity();
 		switch (item.getName()) {
 		case "A":
-			totalPrice = new Float(totalPrice = new Float(item.getQuanity() * 0.50));
+			totalPrice = new Float(((qty / 3) * 1.30) + ((qty % 3) * 0.50));
 			break;
 		case "B":
-			totalPrice = new Float(((qty / 2) * 0.45) + ((qty % 2) * 0.3));
+			totalPrice = new Float(((qty / 2) * 0.45) + ((qty % 2) * 0.30));
 			break;
 		case "C":
 			totalPrice = new Float(item.getQuanity() * 0.20);
