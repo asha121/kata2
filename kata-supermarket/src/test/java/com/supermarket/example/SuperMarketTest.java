@@ -45,4 +45,33 @@ public class SuperMarketTest {
 		assertEquals(new Float(0.80), co.totalprice());
 
 	}
+	@Test
+	public void test_total_price_for_A_item_C() {
+		CheckoutItem co = new CheckoutItem("A");
+		co.addItem("C");
+		assertEquals(new Float(0.70), co.totalprice());
+
+	}
+	@Test
+	public void test_total_price_for_B_item_C() {
+		CheckoutItem co = new CheckoutItem("B");
+		co.addItem("C");
+		assertEquals(new Float(0.50), co.totalprice());
+
+	}
+	@Test
+	public void test_total_price_for_C_item_C() {
+		CheckoutItem co = new CheckoutItem("C");
+		co.addItem("C");
+		assertEquals(new Float(0.40), co.totalprice());
+
+	}
+	@Test
+	public void test_total_price_for_two_b_items() {
+		CheckoutItem co = new CheckoutItem("B");
+		co.addItem("B");
+		assertEquals(new Float(0.45), co.totalprice());
+
+	}
+	
 }
