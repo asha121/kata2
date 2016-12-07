@@ -77,8 +77,19 @@ public class SuperMarketTest {
 	public void test_total_price_for_three_A_items() {
 		CheckoutItem co = new CheckoutItem("A");
 		co.addItem("A",2);
-		//System.out.println(co.totalprice());
 		assertEquals(new Float(1.30), co.totalprice());
-
+	}
+	@Test
+	public void test_total_price_for_B_A_A_items() {
+		CheckoutItem co = new CheckoutItem("B");
+		co.addItem("A",2);
+		assertEquals(new Float(1.30), co.totalprice());
+	}
+	@Test
+	public void test_total_price_for_C_A_A_items() {
+		CheckoutItem co = new CheckoutItem("C");
+		co.addItem("A",2);
+		co.addItem("D",2);
+		assertEquals(new Float(1.50), co.totalprice());
 	}
 }
