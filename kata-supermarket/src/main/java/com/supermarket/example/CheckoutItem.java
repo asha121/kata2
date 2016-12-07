@@ -16,8 +16,11 @@ public class CheckoutItem {
 		case "B":
 			totalPrice = new Float(0.30);
 			break;
-		default:
+		case "C":
 			totalPrice = new Float(0.20);
+			break;
+		default:
+			totalPrice = new Float(0.15);
 			break;
 		}
 		return totalPrice;
