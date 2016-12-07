@@ -7,9 +7,8 @@ import org.junit.Test;
 public class SuperMarketTest {
 
 	@Test
-	public void test_total_price_for_single_item() {
-		CheckoutItems chkOut = new CheckoutItems();
-		assertEquals(new Float(0.50), chkOut.Totalprice());
+	public void test_total_price_for_single_item_A() {
+		assertEquals(new Float(0.50), new CheckoutItems().Totalprice());
 
 	}
 
